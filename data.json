@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "nombre": "Simon",
+    "especie": "perro",
+    "raza": "labrador",
+    "edad": 4,
+    "dueño": "Juan",
+    "telefono": "1234567890",
+    "historial": [
+      "vacunación",
+      "desparacitación",
+      "chequeo"
+    ],
+    "ip": "::1",
+    "created_at": "19:17 23-10-2024",
+    "updated_at": "19:21 23-10-2024"
+  },
+  {
+    "id": 3,
+    "nombre": "Marcelo",
+    "especie": "perro",
+    "raza": "pastor aleman",
+    "edad": 5,
+    "dueño": "Ana Fuentes",
+    "telefono": "1234567890",
+    "historial": [
+      "consulta pre y post operatoria"
+    ],
+    "updated_at": "19:21 23-10-2024"
+  },
+  {
+    "nombre": "Rex",
+    "especie": "perro",
+    "raza": "labrador",
+    "edad": 5,
+    "dueño": "Juan",
+    "telefono": "1234567890",
+    "historial": [
+      "vacunación",
+      "desparacitación"
+    ],
+    "ip": "::1",
+    "created_at": "19:06 23-10-2024",
+    "updated_at": "19:21 23-10-2024",
+    "id": 4
+  },
+  {
+    "nombre": "Doroteo",
+    "especie": "gato",
+    "raza": "criollo",
+    "edad": 2,
+    "dueño": "Maria",
+    "telefono": "1234567890",
+    "historial": [
+      "vacunación",
+      "desparacitación"
+    ],
+    "ip": "::1",
+    "created_at": "19:24 23-10-2024",
+    "updated_at": "19:24 23-10-2024",
+    "id": 5
+  }
+]

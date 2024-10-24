@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "18a25433-f0f0-4cac-bf8e-7dacc9120834",
+		"name": "datos de la api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38466689"
+	},
+	"item": [
+		{
+			"name": "Obtener todas las mascotas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrar mascota por un campo especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mascotas?key=nombre&value=Marcelo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "nombre"
+						},
+						{
+							"key": "value",
+							"value": "Marcelo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limitar el numero de resultados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mascotas?limit=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener mascota por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mascotas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar una nueva mascota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Rex\",\r\n    \"especie\": \"perro\",\r\n    \"raza\": \"labrador\",\r\n    \"edad\": 5,\r\n    \"dueño\": \"Juan\",\r\n    \"telefono\": \"1234567890\",\r\n    \"historial\": [\"vacunación\", \"desparacitación\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar una mascota",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Simon\",\r\n    \"especie\": \"perro\",\r\n    \"raza\": \"labrador\",\r\n    \"edad\": 4,\r\n    \"dueño\": \"Juan\",\r\n    \"telefono\": \"1234567890\",\r\n    \"historial\": [\"vacunación\", \"desparacitación\", \"chequeo\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mascotas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuliazar un campo de todas las mascotas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campo\": \"especie\",\r\n    \"valor\": \"perro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar mascota",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mascotas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mascotas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
